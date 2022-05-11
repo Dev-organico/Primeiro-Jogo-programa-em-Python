@@ -1,0 +1,35 @@
+import random
+
+print("bem vindo ao jogo de adivinhação\n")
+
+deseja_jogar = input("voce deseja jogar? ")
+
+if deseja_jogar.lower() == "sim":
+  print("Você deve adivinhar um numero que vai de 0 a 50. Boa Sorte!")
+else:
+  print("ok, até a proxima.")
+  quit()
+
+numero = random.randrange(50)
+tentativas = 0
+
+
+
+while True:
+  escolha = input("Digite um numero: ")
+  if escolha.isdigit():
+    escolha = int(escolha)
+    if escolha == numero:
+      break
+    elif escolha > numero:
+      print("Tente um numero menor.")
+      tentativas += 1
+      continue
+    else:
+      print("Tente um numero maior.")
+      tentativas += 1
+      continue
+
+
+print("Parabens, voce ganhou, seu numero de tentativas foi {}, numero aleatório igual a {}.".format(tentativas,numero))
+
