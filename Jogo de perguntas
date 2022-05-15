@@ -3,9 +3,7 @@ print("bem vindo ao jogo de perguntas")
 
 resposta = str(input("você deseja jogar? "))
 
-resposta = resposta.lower()
-
-if resposta == "sim":
+if resposta.lower() == "sim":
   pass
 else:
   quit()
