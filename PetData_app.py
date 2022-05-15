@@ -1,4 +1,3 @@
-from math import inf
 import random
 
 lista_nome_cachorros = []
