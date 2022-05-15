@@ -13,9 +13,9 @@ pontos = 0
 print("pergunta 1")
 
 resposta_1 = str(input("Qual a capital do Brasil? "))
-resposta_1 = resposta_1.capitalize()
 
-if resposta_1 == "Brasilia":
+
+if resposta_1.capitalize() == "Brasilia":
   print("parabens! voce acertou!")
   pontos += 1
 else:
@@ -34,9 +34,9 @@ else:
 print("pergunta 3")
 
 resposta_3 = str(input("Qual continente vive o Leão? "))
-resposta_3 = resposta_3.capitalize()
 
-if resposta_3 == "Africa":
+
+if resposta_3.capitalize() == "Africa":
   print("parabens! voce acertou!")
   pontos += 1
 else:
